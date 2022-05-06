@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:ital,wght@0,400;0,600;1,300&display=swap');
+
+body{
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 90px;
+    position: fixed;
+    padding: 0 30px;
+    top: 0;
+    left: 0;
+    code{
+        font-size: 30px;
+    }
+    .manuIcon{
+        height: 35px;
+        width: 35px;
+    }
+}
+
+.hero{
+    padding-top: 90px;
+}
