@@ -1,5 +1,5 @@
 function Contact() {
-    return ( <div className="contact">
+    return ( <div id="contact">
         Contact
     </div> );
 }

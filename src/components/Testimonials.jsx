@@ -1,5 +1,5 @@
 function Testimonials() {
-    return ( <div className="testimonials">
+    return ( <div id="testimonials">
         Testimonials
     </div> );
 }
