@@ -1,6 +1,5 @@
 import Hero from './components/Hero'
 import Contact from './components/Contact'
-import Achievements from './components/Achievements'
 import Education from './components/Education'
 import Experience from './components/Experience'
 import Header from './components/Header'
@@ -18,7 +17,6 @@ function App() {
     <Skills></Skills>
     <Experience></Experience>
     <Projects></Projects>
-    <Achievements></Achievements>
     <Testimonials></Testimonials>
     <Contact></Contact>
   </>)
