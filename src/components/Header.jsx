@@ -20,16 +20,18 @@ function Header() {
 
     return ( <header>
         <code ref={logoRef}></code>
-        <MenuIcon onClick={()=>{setDrawer(true)}} className='manuIcon'></MenuIcon>
+        <MenuIcon onClick={()=>{setDrawer(true)}} className='menuIcon'></MenuIcon>
         <SwipeableDrawer anchor='right' open={drawer} onClose={()=>{setDrawer(false)}}>
-            <div className="exit"><CloseIcon /></div>
-            <ul>
-                <li><a href="#">Home <HomeIcon/></a></li>
-                <li><a href="#who">About <AccountCircleIcon/></a></li>
-                <li><a href="#projects">Projects <ArticleIcon/></a></li>
-                <li><a href="#testimonials">Testimonials <CommentIcon/></a></li>
-                <li><a href="#contact">Contact <PhoneIcon/></a></li>
-            </ul>
+            <div className="drawer">
+                <div className="exit"><CloseIcon onClick={()=>setDrawer(false)} /></div>
+                <ul>
+                    <li><a href="#"><HomeIcon/>Home </a></li>
+                    <li><a href="#who"><AccountCircleIcon/>About </a></li>
+                    <li><a href="#projects"><ArticleIcon/>Projects </a></li>
+                    <li><a href="#testimonials"><CommentIcon/>Testimonials </a></li>
+                    <li><a href="#contact"><PhoneIcon/>Contact </a></li>
+                </ul>
+            </div>
         </SwipeableDrawer>
     </header> );
 }
