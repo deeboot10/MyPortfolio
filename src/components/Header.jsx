@@ -21,7 +21,7 @@ function Header() {
     return ( <header>
         <code ref={logoRef}></code>
         <MenuIcon onClick={()=>{setDrawer(true)}} className='menuIcon'></MenuIcon>
-        <SwipeableDrawer anchor='right' open={drawer} onClose={()=>{setDrawer(false)}}>
+        <SwipeableDrawer anchor='right' open={drawer} onClose={()=>{setDrawer(false)}} onOpen={()=>{}}>
             <div className="drawer">
                 <div className="exit"><CloseIcon onClick={()=>setDrawer(false)} /></div>
                 <ul>
