@@ -3,8 +3,16 @@ import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import { useEffect, useRef, useState } from 'react';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import Slider from 'react-slick';
 
 const reviews = [{name: 'Milica Dabović', text: 'Making my portfolio with this helped me get my role as \'Dr. Drake Ramoray\' in \'Days Of Our Lives\'. You guys are the best !', role: 'Ex Basketball Player'}, {name: 'Milica Dabović', text: 'Making my portfolio with this helped me get my role as \'Dr. Drake Ramoray\' in \'Days Of Our Lives\'. You guys are the best !', role: 'Ex Basketball Player'}, {name: 'Milica Dabović', text: 'Making my portfolio with this helped me get my role as \'Dr. Drake Ramoray\' in \'Days Of Our Lives\'. You guys are the best !', role: 'Ex Basketball Player'}, {name: 'Milica Dabović', text: 'Making my portfolio with this helped me get my role as \'Dr. Drake Ramoray\' in \'Days Of Our Lives\'. You guys are the best !', role: 'Ex Basketball Player'}];
+const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
 
 function Testimonials() {
 
@@ -23,10 +31,6 @@ function Testimonials() {
             <p className="role">{rev.role}</p>
         </div>)
     });
-    const dotsDom = [];
-    reviews.forEach((rev, i) => {
-        dotsDom.push(<div className='dot' key={i} onClick={handleDotClick} data-id={i}></div>)
-    })
 
 
     return ( <div id="testimonials">
@@ -36,15 +40,10 @@ function Testimonials() {
         </div>
         <div className="sliderCont">
             <ArrowCircleLeftIcon className='arrowIcon'></ArrowCircleLeftIcon>
-            <div className="sliderInn">
-                <div className="sliderScroll">
-                    {reviewsDom}
-                </div>
-            </div>
+            <Slider {...settings}>
+                {reviewsDom}
+            </Slider>
             <ArrowCircleRightIcon className='arrowIcon'></ArrowCircleRightIcon>
-        </div>
-        <div className="navigate">
-            {dotsDom}
         </div>
     </div> );
 }

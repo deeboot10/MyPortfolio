@@ -502,10 +502,13 @@ header{
             fill: white;
         }
         .sliderInn{
-            width: 80%;
+            width: 70vw;
+            display: flex;
+            justify-content: center;
             overflow: hidden;
             .sliderScroll{
-                width: 100%;
+                align-items: center;
+                width: 65vw;
                 overflow-x: scroll;
                 display: flex;
             }
@@ -518,11 +521,10 @@ header{
             }
         }
         .item{
-            width: 100%;
             position: relative;
             background-color: #212121;
             color: white;
-            padding: 21px 15%;
+            padding: 21px 10px;
             border-radius: 1000px;
             .avatar{
                 background-color: #212121;
