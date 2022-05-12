@@ -8,6 +8,7 @@ function Projects() {
         <h1>Projects</h1>
         <div className="container">
             <div className="item">
+                <div className="side">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, perspiciatis laudantium odit esse totam nisi cupiditate deserunt vitae nostrum laborum sit quas blanditiis numquam officiis quis. Rerum atque eveniet officia!</div>
                 <h4>Coffee Web Shop - Kraljica Kafa</h4>
                 <img src={img1} alt="coffee illustration" />
                 <a className='play' href='https://kraljicakafa.com/' target='_blank'>
@@ -15,6 +16,7 @@ function Projects() {
                 </a>
             </div>
             <div className="item">
+                <div className="side">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, perspiciatis laudantium odit esse totam nisi cupiditate deserunt vitae nostrum laborum sit quas blanditiis numquam officiis quis. Rerum atque eveniet officia!</div>
                 <h4>Nft Landing Page - Goldie</h4>
                 <img src={img2} alt="nft illustration" />
                 <a className='play' href='https://goldie-330e9.web.app/' target='_blank'>
@@ -22,6 +24,7 @@ function Projects() {
                 </a>
             </div>
             <div className="item">
+                <div className="side">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, perspiciatis laudantium odit esse totam nisi cupiditate deserunt vitae nostrum laborum sit quas blanditiis numquam officiis quis. Rerum atque eveniet officia!</div>
                 <h4>Crypto Currency Landing Page - Appa Inu</h4>
                 <img src={img3} alt="crypto currency illustration" />
                 <a className='play' href='https://appainu.org/' target='_blank'>

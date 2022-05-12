@@ -20,9 +20,10 @@ header{
     top: 0;
     left: 0;
     code{
+        color: white;
         padding: 4px 6px;
         border-radius: 3px;
-        background-color: rgba(128, 128, 128, 0.457);
+        background-color: rgba(0, 0, 0, 0.26);
         font-size: 30px;
     }
     .menuIcon{
@@ -393,6 +394,163 @@ header{
         align-items: center;
         img{
             height: 50vh;
+        }
+    }
+}
+
+#projects{
+    background-color: #212121;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 80px 100px 80px;
+    h1{
+        font-size: 51px;
+        text-align: center;
+        color: #F56539;
+        margin-bottom: 50px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        .item{
+            margin: 0 40px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 15px;
+            padding: 20px 12px;
+            background-color: #FF764D;
+            overflow: hidden;
+            .side{
+                position: absolute;
+                box-sizing: border-box;
+                padding: 20px 15px;
+                top: 100px; left: -85%;
+                width: 80%;
+                transition: 600ms;
+                animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+                background-color: #212121;
+                color: white;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+            h4{
+                font-size: 24px;
+                text-align: center;
+                margin: 0;
+            }
+            img{
+                width: 80%;
+                margin: 0 auto;
+            }
+            .play{
+                display: flex;
+                justify-content: center;
+                svg{
+                    fill: white;
+                    height: 50px; width: 50px;
+                    transition: 300ms;
+                }
+                svg:hover{
+                    fill: #212121;
+                }
+            }
+        }
+        .item:hover .side{
+            left: 0;
+        }
+    }
+}
+
+#testimonials{
+    background-color: #F56539;
+    color: #212121;
+    min-height: 100vh;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+        font-size: 51px;
+        color: #212121;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .quote{
+        svg{
+            height: 100px; width: 100px;
+            opacity: .7;
+        }
+    }
+    .sliderCont{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .arrowIcon{
+            height: 60px; width: 60px;
+            transition: 300ms;
+        }
+        .arrowIcon:nth-child(1){ margin-right: 30px;}
+        .arrowIcon:nth-child(3){ margin-left: 30px;}
+        .arrowIcon:hover{
+            cursor: pointer;
+            fill: white;
+        }
+        .sliderInn{
+            width: 80%;
+            overflow: hidden;
+            .sliderScroll{
+                width: 100%;
+                overflow-x: scroll;
+                display: flex;
+            }
+            .sliderScroll::-webkit-scrollbar {
+                display: none;
+            }          
+            .sliderScroll {
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+            }
+        }
+        .item{
+            width: 100%;
+            position: relative;
+            background-color: #212121;
+            color: white;
+            padding: 21px 15%;
+            border-radius: 1000px;
+            .avatar{
+                background-color: #212121;
+                border-radius: 100px;
+                position: absolute;
+                height: 80px;
+                width: 80px;
+                top: -40px;
+                left: calc(50% - 40px);
+                z-index: 2;
+            }
+            p{
+                text-align: center;
+            }
+            .text{
+                font-style: italic;
+                font-size: 15px;
+            }
+            .name{
+                font-size: 21px;
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+            .role{
+                font-size: 12px;
+                font-weight: bold;
+                margin-top: 0;
+            }
         }
     }
 }

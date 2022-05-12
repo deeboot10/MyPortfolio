@@ -17,7 +17,7 @@ function Testimonials() {
     const reviewsDom = []
     reviews.forEach((rev, i) => {
         reviewsDom.push(<div key={i} className='item'>
-            <AccountCircleIcon></AccountCircleIcon>
+            <AccountCircleIcon className='avatar'></AccountCircleIcon>
             <p className="text">{rev.text}</p>
             <p className='name'>{rev.name}</p>
             <p className="role">{rev.role}</p>
@@ -35,13 +35,13 @@ function Testimonials() {
             <FormatQuoteIcon></FormatQuoteIcon>
         </div>
         <div className="sliderCont">
-            <ArrowCircleLeftIcon></ArrowCircleLeftIcon>
+            <ArrowCircleLeftIcon className='arrowIcon'></ArrowCircleLeftIcon>
             <div className="sliderInn">
                 <div className="sliderScroll">
                     {reviewsDom}
                 </div>
             </div>
-            <ArrowCircleRightIcon></ArrowCircleRightIcon>
+            <ArrowCircleRightIcon className='arrowIcon'></ArrowCircleRightIcon>
         </div>
         <div className="navigate">
             {dotsDom}
