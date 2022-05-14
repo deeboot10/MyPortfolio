@@ -25,11 +25,11 @@ function Header() {
             <div className="drawer">
                 <div className="exit"><CloseIcon onClick={()=>setDrawer(false)} /></div>
                 <ul>
-                    <li><a href="#"><HomeIcon/>Home </a></li>
-                    <li><a href="#who"><AccountCircleIcon/>About </a></li>
-                    <li><a href="#projects"><ArticleIcon/>Projects </a></li>
-                    <li><a href="#testimonials"><CommentIcon/>Testimonials </a></li>
-                    <li><a href="#contact"><PhoneIcon/>Contact </a></li>
+                    <li><a onClick={()=>{setDrawer(false)}} href="#"><HomeIcon/>Home </a></li>
+                    <li><a onClick={()=>{setDrawer(false)}} href="#who"><AccountCircleIcon/>About </a></li>
+                    <li><a onClick={()=>{setDrawer(false)}} href="#projects"><ArticleIcon/>Projects </a></li>
+                    <li><a onClick={()=>{setDrawer(false)}} href="#testimonials"><CommentIcon/>Testimonials </a></li>
+                    <li><a onClick={()=>{setDrawer(false)}} href="#contact"><PhoneIcon/>Contact </a></li>
                 </ul>
             </div>
         </SwipeableDrawer>

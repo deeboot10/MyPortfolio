@@ -8,12 +8,18 @@ function Contact() {
         <h1>Contact</h1>
         <div className="container">
             <div className="message">
-                <label htmlFor="name">Name</label>
-                <input type="text" name='name' />
-                <label htmlFor="email">Email</label>
-                <input type="email" name='email' />
-                <label htmlFor="message">Message</label>
-                <textarea name="message" cols="30" rows="6"></textarea>
+                <div className="abs">
+                    <label htmlFor="name">Name</label>
+                    <input type="text" name='name' placeholder='Your Name'/>
+                </div>
+                <div className="abs">
+                    <label htmlFor="email">Email</label>
+                    <input type="email" name='email' placeholder='your@email.com'/>
+                </div>
+                <div className="abs">
+                    <label htmlFor="message">Message</label>
+                    <textarea name="message" cols="30" rows="6"  placeholder='Type your message ...'></textarea>
+                </div>
                 <button>Send <SendIcon/></button>
             </div>
             <div className="info">
@@ -31,6 +37,7 @@ function Contact() {
                 </div>
             </div>
         </div>
+        <div className='credit'>Made by <a target='_blank' href="https://github.com/deeboot10">Uroš.</a> 🐢</div>
     </div> );
 }
 
