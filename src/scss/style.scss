@@ -107,6 +107,26 @@ header{
         grid-column: span 1;
         background-color: #F56539;
         position: relative;
+        display: flex;
+        .social{
+            align-self: flex-end;
+            padding: 30px 50px;
+            a{
+                svg{
+                    fill: #212121;
+                    height: 50px;
+                    width: 50px;
+                    margin: 0 12px;
+                    transition: 300ms;
+                }
+            }
+            a:hover{
+                svg{
+                    transform: scale(1.2);
+                }
+            }
+            
+        }
         img{
             z-index: 2;
             position: absolute;
@@ -577,6 +597,7 @@ header{
                 background-color: transparent;
                 padding: 12px 30px;
                 color: white;
+                width: 400px;
             }
             label{
                 align-self: flex-start;
@@ -618,22 +639,50 @@ header{
         .info{
             display: flex;
             flex-direction: column;
-            .item{
+            justify-content: space-between;
+            .items{
                 display: flex;
-                align-items: center;
-                margin-top: 40px;
-                .circle{
+                flex-direction: column;
+                .item{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 40px;
+                    .circle{
+                        width: 50px; height: 50px;
+                        border-radius: 100px;
+                        background-color: #F56539;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 24px;
+                        svg{
+                            fill: #212121;
+                            height: 30px; width: 30px;
+                        }
+                    }
+                }
+            }
+            .social{
+                display: flex;
+                a{
                     width: 50px; height: 50px;
-                    border-radius: 100px;
                     background-color: #F56539;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    margin-right: 24px;
+                    border-radius: 100px;
+                    transition: 300ms;
                     svg{
+                        transition: 300ms;
                         fill: #212121;
-                        height: 30px; width: 30px;
+                        height: 30px;
+                        width: 30px;
                     }
+                    margin: 0 12px;
+                }
+                a:hover{
+                    background-color: white;
+                    transform: scale(1.1);
                 }
             }
         }

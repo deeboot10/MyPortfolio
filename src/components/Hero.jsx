@@ -1,9 +1,12 @@
 import profileImg from '../img/profilepic.png'
+import Social from '../components/Social'
+
 
 function Hero() {
     return ( <div className="hero">
         <div className="left">
             <img src={profileImg} alt="My Profile Image" />
+            <Social></Social>
         </div>
         <div className="right">
             <p className='topLabel'>Web Developer</p>

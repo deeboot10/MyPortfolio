@@ -2,6 +2,7 @@ import SendIcon from '@mui/icons-material/Send';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import Social from './Social';
 
 function Contact() {
     return ( <div id="contact">
@@ -23,18 +24,21 @@ function Contact() {
                 <button>Send <SendIcon/></button>
             </div>
             <div className="info">
-                <div className="item">
-                    <div className="circle"><AlternateEmailIcon/></div>
-                    uroskrupnikovic@yahoo.com
+                <div className="items">
+                    <div className="item">
+                        <div className="circle"><AlternateEmailIcon/></div>
+                        uroskrupnikovic@yahoo.com
+                    </div>
+                    <div className="item">
+                        <div className="circle"><LocalPhoneIcon/></div>
+                        +381 640 482 369
+                    </div>
+                    <div className="item">
+                        <div className="circle"><LocationOnIcon/></div>
+                        Karađorđeva 14, Čačak, Serbia
+                    </div>
                 </div>
-                <div className="item">
-                    <div className="circle"><LocalPhoneIcon/></div>
-                    +381 640 482 369
-                </div>
-                <div className="item">
-                    <div className="circle"><LocationOnIcon/></div>
-                    Karađorđeva 14, Čačak, Serbia
-                </div>
+                <Social></Social>
             </div>
         </div>
         <div className='credit'>Made by <a target='_blank' href="https://github.com/deeboot10">Uroš.</a> 🐢</div>

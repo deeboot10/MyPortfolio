@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 function Skills() {
     return ( <div className="skills">
         <h1>Skills</h1>
-        <Marquee speed={80} pauseOnHover={true} gradient={false}>
+        <Marquee speed={80} pauseOnHover={false} gradient={false}>
                 <div className="container">
                     <div className="item">
                         <svg viewBox="0 0 128 128" width={100} height={100}>
