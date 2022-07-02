@@ -1,0 +1,132 @@
+@media screen and (max-width: 1000px) {
+  body {
+    text-align: center;
+  }
+  header {
+    code {
+      font-size: 24px;
+    }
+    svg.menuIcon {
+      margin: 0;
+    }
+  }
+  .drawer {
+    width: 80vw;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    .left {
+      justify-content: center;
+      height: 20vh;
+      .img-container {
+        position: absolute;
+        left: calc(50vw - 25vw - 9px);
+        bottom: calc(-25vw - 9px);
+        padding: 9px;
+        border-radius: 10000px;
+        background-color: #212121;
+      }
+      img {
+        position: unset;
+        width: 50vw;
+        height: 50vw;
+      }
+    }
+    .right {
+      grid-column: span 1;
+      padding: 0;
+      padding-top: 27vw;
+      text-align: center;
+      .buttons {
+        justify-content: center;
+        button {
+          margin: 0;
+          margin-bottom: 30px;
+        }
+      }
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
+  #who {
+    .separator {
+      padding: 30px 21px;
+    }
+    .content {
+      padding: 15px 21px;
+      flex-direction: column;
+      text-align: center;
+      .text {
+        padding: 0;
+      }
+      .img {
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  .education {
+    padding: 30px 21px;
+    flex-direction: column;
+    .text {
+      .container {
+        padding-right: 0;
+      }
+    }
+    .img {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .experience {
+    padding: 42px 21px;
+    .text h1 {
+      text-align: center;
+    }
+    .text .container {
+      padding: 30px 0;
+    }
+  }
+  #projects {
+    padding: 42px 21px;
+    .container {
+      padding: 30px 0;
+      grid-template-columns: 1fr;
+      .item {
+        margin: 15px 0;
+        .side {
+          display: none;
+        }
+      }
+    }
+  }
+  #testimonials {
+    display: none;
+  }
+  #contact {
+    padding: 42px 21px;
+    .container {
+      grid-template-columns: 1fr;
+      .message {
+        input,
+        textarea {
+          width: 100%;
+        }
+        button {
+          align-self: center;
+        }
+      }
+      .info {
+        .items {
+          padding: 42px 0 54px 0;
+        }
+        .social {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
