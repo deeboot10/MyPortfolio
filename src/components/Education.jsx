@@ -5,9 +5,9 @@ function Education() {
   return (
     <div className="education">
       <div className="text">
-        <h1>Education</h1>
+        <h1 data-aos="fade-right">Education</h1>
         <div className="container">
-          <div className="item">
+          <div className="item" data-aos="fade-right">
             <div className="icon">
               <SchoolIcon />
             </div>
@@ -17,7 +17,7 @@ function Education() {
               <p className="labelBottom">Primary School</p>
             </div>
           </div>
-          <div className="item">
+          <div className="item" data-aos="fade-right">
             <div className="icon">
               <SchoolIcon />
             </div>
@@ -27,7 +27,7 @@ function Education() {
               <p className="labelBottom">High School</p>
             </div>
           </div>
-          <div className="item">
+          <div className="item" data-aos="fade-right">
             <div className="icon">
               <SchoolIcon />
             </div>

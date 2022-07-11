@@ -6,9 +6,9 @@ import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 function Projects() {
   return (
     <div id="projects">
-      <h1>Projects</h1>
+      <h1 data-aos="fade-up">Projects</h1>
       <div className="container">
-        <div className="item">
+        <div data-aos="fade-up" className="item">
           <div className="side">Modern Web Shop used by coffee producing company. Every order is recorded in firebase firestore database and can be accessed through admin panel. Users can login to shorten the time of next order by letting the site remember their order informations.</div>
           <h4>Coffee Web Shop - Kraljica Kafa</h4>
           <img src={img1} alt="coffee illustration" />
@@ -16,7 +16,7 @@ function Projects() {
             <PlayCircleIcon></PlayCircleIcon>
           </a>
         </div>
-        <div className="item">
+        <div data-aos="fade-up" className="item">
           <div className="side">Landing page for a fresh new nft collection. Mostly inspired by child motives and spiced up with some smooth transitions.</div>
           <h4>Nft Landing Page - Goldie</h4>
           <img src={img2} alt="nft illustration" />
@@ -24,7 +24,7 @@ function Projects() {
             <PlayCircleIcon></PlayCircleIcon>
           </a>
         </div>
-        <div className="item">
+        <div data-aos="fade-up" className="item">
           <div className="side">Crypto Currency landing page. Clean and simple. Effectively giving off right message to users.</div>
           <h4>Crypto Currency Landing Page - Appa Inu</h4>
           <img src={img3} alt="crypto currency illustration" />

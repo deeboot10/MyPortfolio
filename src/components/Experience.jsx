@@ -11,9 +11,9 @@ function Experience() {
         </div>
       </BrowserView>
       <div className="text">
-        <h1>Experience</h1>
+        <h1 data-aos="fade-left">Experience</h1>
         <div className="container">
-          <div className="item">
+          <div data-aos="fade-left" className="item">
             <div className="icon">
               <WorkOutlineIcon />
             </div>
@@ -23,7 +23,7 @@ function Experience() {
               <p className="labelBottom">Front-End Web Developer</p>
             </div>
           </div>
-          <div className="item">
+          <div data-aos="fade-left" className="item">
             <div className="icon">
               <WorkOutlineIcon />
             </div>
@@ -33,7 +33,7 @@ function Experience() {
               <p className="labelBottom">Front-End Web Developer</p>
             </div>
           </div>
-          <div className="item">
+          <div data-aos="fade-left" className="item">
             <div className="icon">
               <WorkOutlineIcon />
             </div>

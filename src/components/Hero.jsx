@@ -19,9 +19,13 @@ function Hero() {
         </BrowserView>
       </div>
       <div className="right">
-        <p className="topLabel">Web Developer</p>
-        <h1>Krupniković Uroš</h1>
-        <p className="description">Creating smooth, futuristic UIs to bring only the right informations to users. Using modern technologies in order to make websites approachable and easy to use.</p>
+        <p className="topLabel" data-aos="fade-up">
+          Web Developer
+        </p>
+        <h1 data-aos="fade-up">Krupniković Uroš</h1>
+        <p data-aos="fade-up" className="description">
+          Creating smooth, futuristic UIs to bring only the right informations to users. Using modern technologies in order to make websites approachable and easy to use.
+        </p>
         <div className="buttons">
           <a href={cv} download={cv} target="_blank">
             <button className="btn-out">Download CV</button>
