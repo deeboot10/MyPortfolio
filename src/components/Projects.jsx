@@ -9,7 +9,7 @@ function Projects() {
       <h1>Projects</h1>
       <div className="container">
         <div className="item">
-          <div className="side">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, perspiciatis laudantium odit esse totam nisi cupiditate deserunt vitae nostrum laborum sit quas blanditiis numquam officiis quis. Rerum atque eveniet officia!</div>
+          <div className="side">Modern Web Shop used by coffee producing company. Every order is recorded in firebase firestore database and can be accessed through admin panel. Users can login to shorten the time of next order by letting the site remember their order informations.</div>
           <h4>Coffee Web Shop - Kraljica Kafa</h4>
           <img src={img1} alt="coffee illustration" />
           <a className="play" href="https://kraljicakafa.com/" target="_blank">
@@ -17,15 +17,15 @@ function Projects() {
           </a>
         </div>
         <div className="item">
-          <div className="side">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, perspiciatis laudantium odit esse totam nisi cupiditate deserunt vitae nostrum laborum sit quas blanditiis numquam officiis quis. Rerum atque eveniet officia!</div>
+          <div className="side">Landing page for a fresh new nft collection. Mostly inspired by child motives and spiced up with some smooth transitions.</div>
           <h4>Nft Landing Page - Goldie</h4>
           <img src={img2} alt="nft illustration" />
-          <a className="play" href="https://goldie-330e9.web.app/" target="_blank">
+          <a className="play" href="https://www.goldienft.io/" target="_blank">
             <PlayCircleIcon></PlayCircleIcon>
           </a>
         </div>
         <div className="item">
-          <div className="side">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, perspiciatis laudantium odit esse totam nisi cupiditate deserunt vitae nostrum laborum sit quas blanditiis numquam officiis quis. Rerum atque eveniet officia!</div>
+          <div className="side">Crypto Currency landing page. Clean and simple. Effectively giving off right message to users.</div>
           <h4>Crypto Currency Landing Page - Appa Inu</h4>
           <img src={img3} alt="crypto currency illustration" />
           <a className="play" href="https://appainu.org/" target="_blank">

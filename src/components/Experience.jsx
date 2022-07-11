@@ -18,7 +18,7 @@ function Experience() {
               <WorkOutlineIcon />
             </div>
             <div className="item-text">
-              <p className="labelTop">2014-2022</p>
+              <p className="labelTop">2019</p>
               <p className="name">Quantox Tech Co</p>
               <p className="labelBottom">Front-End Web Developer</p>
             </div>
@@ -28,8 +28,8 @@ function Experience() {
               <WorkOutlineIcon />
             </div>
             <div className="item-text">
-              <p className="labelTop">2014-2022</p>
-              <p className="name">Quantox Tech Co</p>
+              <p className="labelTop">2020-2021</p>
+              <p className="name">Freelance work</p>
               <p className="labelBottom">Front-End Web Developer</p>
             </div>
           </div>
@@ -38,8 +38,8 @@ function Experience() {
               <WorkOutlineIcon />
             </div>
             <div className="item-text">
-              <p className="labelTop">2014-2022</p>
-              <p className="name">Quantox Tech Co</p>
+              <p className="labelTop">2022-PRESENT</p>
+              <p className="name">Alpa Digital Co</p>
               <p className="labelBottom">Front-End Web Developer</p>
             </div>
           </div>

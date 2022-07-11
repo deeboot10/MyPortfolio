@@ -1,6 +1,7 @@
 import profileImg from "../img/profilepic.png";
 import Social from "../components/Social";
 import { BrowserView, MobileView } from "react-device-detect";
+import cv from "../files/CV.pdf";
 function Hero() {
   return (
     <div className="hero">
@@ -22,9 +23,13 @@ function Hero() {
         <h1>Krupniković Uroš</h1>
         <p className="description">Creating smooth, futuristic UIs to bring only the right informations to users. Using modern technologies in order to make websites approachable and easy to use.</p>
         <div className="buttons">
-          <button className="btn-out">Download CV</button>
+          <a href={cv} download={cv} target="_blank">
+            <button className="btn-out">Download CV</button>
+          </a>
           <BrowserView>
-            <button className="btn-in">Contact</button>
+            <a href="#contact">
+              <button className="btn-in">Contact</button>
+            </a>
           </BrowserView>
         </div>
       </div>
